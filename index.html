@@ -18,14 +18,44 @@
 				text-align: center;
 				font-family: "Calibri Light", sans-serif;
 			}
-			iframe { height: 50vh; width: 100vw }
+			iframe {
+				height: 80vh;
+				width: 90vw;
+				border: 1px solid black;
+			}
+			table {
+				height: 40vh;
+				width: 90vw;
+				font-family: "Calibri Light", sans-serif;
+			}
+			#headline {
+				height: 5vh;
+				width: 90vw;
+				font-size: 18px;
+			}
 		</style>
 	</head>
 	<body>
-		<h1>Morgan Liu's Imagination Notebook</h1>
-		<p>Hello world!</p>
-		<iframe src="">
+		<h1 id="topline">Morgan Liu's Imagination Notebook</h1>
+		<table id="headline">
+			<tr align="center">
+				<td><a href="#aboutme">About Me</a></td>
+				<td><a href="#myworks">My Works</a></td>
+				<td><a href="#publications">Publications</a></td>
+				<td><a href="#mynotes">My Notes</a></td>
+			</tr>
+		</table>
+		<p align="center" id="aboutme"><iframe src="subpages\aboutme\aboutme.html">
 			<p>Your browser does not support iframes.</p>
-		</iframe>
+		</iframe></p>
+		<p align="center" id="myworks"><iframe src="">
+			<p>Your browser does not support iframes.</p>
+		</iframe></p>
+		<p align="center" id="publications"><iframe src="">
+			<p>Your browser does not support iframes.</p>
+		</iframe></p>
+		<p align="center" id="mynotes"><iframe src="">
+			<p>Your browser does not support iframes.</p>
+		</iframe></p>
 	</body>
 </html>
